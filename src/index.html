@@ -12,3 +12,15 @@
   <app-root></app-root>
 </body>
 </html>
+
+
+<!--Angular big picture workings under the hood
+- scans the index.html file where we import our js files
+- then it kickstarts in the main.ts file
+- it has a look at which features our app uses in the app.module.ts files
+- then has a look at these features in the app.component.ts files
+- then finally understands the rest of the index.html file,
+- namely the <app-root></app-root> part
+- and then renders the content of our app according to our app.component.html file
+- in the place of <app-root></app-root>
+-->
