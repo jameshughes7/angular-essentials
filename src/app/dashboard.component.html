@@ -1,0 +1,12 @@
+<p>Your dashboard!</p>
+<div>
+  <button (click)="switchState()">Switch state</button>
+</div>
+<!-- <p>{{ loadState }}</p> -->
+<p [textContent]="loadState"></p>
+<div>
+  <input type="click" [(ngModel)]="loadState">
+</div>
+
+<!--event binding-->
+<!-- <input type="text" (input)="loadState = $event.target.value"> -->

@@ -13,7 +13,6 @@ export class UserComponent {
 
   onUserInput($event) {
     this.name = event.target.value;
-    this.age = event.target.value;
   }
 }
 
