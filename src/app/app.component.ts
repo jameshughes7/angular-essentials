@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  rootName = 'Jameson';
+
+  onNameChanged(newName) {
+    this.rootName = newName;
+  }
 }
 
 // @feature is a decorator
