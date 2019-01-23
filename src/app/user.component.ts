@@ -13,11 +13,13 @@ export class UserComponent {
 
   onUserInput($event) {
     this.name = event.target.value;
+    this.age = event.target.value;
   }
 }
 
 
 // event binding
 // property binding
+// e.g. <input type="text" (input)="onUserInput($event)" [value]="name">
 // directives are instructions placed inside templates
 
