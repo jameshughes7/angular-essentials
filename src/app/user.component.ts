@@ -23,6 +23,8 @@ export class UserComponent {
 // event binding
 // property binding
 // e.g. <input type="text" (input)="onUserInput($event)" [value]="name">
+// two way binding
+// <input type="text" [(ngModel)]="name">
 // directives are instructions placed inside templates
 
 // @Input decorator

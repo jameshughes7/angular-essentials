@@ -1,12 +1,15 @@
 <p>Your dashboard!</p>
 <div>
-  <button (click)="switchState()">Switch state</button>
+  <button class="myButton" (click)="switchState()">Switch state</button>
 </div>
 <!-- <p>{{ loadState }}</p> -->
 <p [textContent]="loadState"></p>
 <div>
-  <input type="click" [(ngModel)]="loadState">
+  <input type="text" (input)="loadState = $event.target.value">
 </div>
 
 <!--event binding-->
 <!-- <input type="text" (input)="loadState = $event.target.value"> -->
+
+<!-- 2 way binding -->
+<!-- <input type="click" [(ngModel)]="loadState"> -->
