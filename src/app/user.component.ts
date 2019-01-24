@@ -1,18 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component ({
   selector: 'app-user',
   template: `
   <input type="text" (input)="onUserInput($event)" [value]="name">
+<<<<<<< HEAD
+=======
+    <!--<input type="text" [(ngModel)]="name"> -->
+>>>>>>> develop
     <p>Hello {{ name }}!<p>
-    <p>I'm the user component</p>
+    <app-user-detail></app-user-detail>
     `
 })
 export class UserComponent {
-  name = 'James';
+  @Input() name;
+  @Output() nameChanged = new EventEmitter<string>();
 
   onUserInput(event) {
     this.name = event.target.value;
+    this.nameChanged.emit(event.target.value);
   }
 }
 
@@ -23,4 +29,8 @@ export class UserComponent {
 // two way binding
 // <input type="text" [(ngModel)]="name">
 // directives are instructions placed inside templates
+
+// @Input decorator
+// used to make name property
+// into a bindable/settable property
 

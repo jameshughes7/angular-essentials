@@ -1,17 +1,19 @@
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user.component';
 import { DashboardComponent} from './dashboard.component';
+import { UserDetailComponent} from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    DashboardComponent
+    DashboardComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
