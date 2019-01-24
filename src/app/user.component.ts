@@ -4,10 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-user',
   template: `
   <input type="text" (input)="onUserInput($event)" [value]="name">
-<<<<<<< HEAD
-=======
     <!--<input type="text" [(ngModel)]="name"> -->
->>>>>>> develop
     <p>Hello {{ name }}!<p>
     <app-user-detail></app-user-detail>
     `
